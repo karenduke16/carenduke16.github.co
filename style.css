@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap');
+
+body 
+{   font-family:'Dancing Script', cursive;
+    background: url(Imagenes/fondo.png);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+{   padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+ul {
+    list-style: none;
+}
+a,li{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+.logo-header img{
+     width: 150px;
+    margin-left: 100px;
+}
+
+header{
+    background: #A23234;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin: 80px auto;
+    padding: 20px;
+}
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+.nav-menu ul li a{
+     position: relative;
+    display: block;
+    text-align: center;
+    margin-right: 5rem;
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.nav-menu ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: .3rem;
+    background: #BDAA8C;
+    transition: .5s;
+}
+
+.nav-menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: .3rem;
+    background: #524437;
+    transition: .5s;
+}
+.nav-menu ul li:hover a{
+    color: #BDAA8C
+        
+}
+.nav-menu ul li:hover a::before{
+    width: 50%;
+    transform: translate(100%)
+    
+}
+.nav-menu ul li:hover  a::after{
+     width: 50%;
+    transform: translate(-100%)
+    
+}
+
+.content{
+    width: 90%;
+    height: 500px;
+    margin:50px auto;
+    background: #F2EADD;
+    display: flex;
+    justify-content:center;
+    
+    
+    
+    
+}
+.box {
+    
+    width: 400px;
+    height: 400px;
+    background-color: #F2EADD;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px;
+    padding: 50px;
+}
+.box img{
+   padding: 10px;
+   width:180px;
+   height:130px;
+    margin-left: 120;
+    margin-right: 100;
+    border-radius: 10px;
+    
+}
+.box h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800; 
+}
+
+.box p{
+    width: 400px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+    margin: auto;
+    line-height: 30px;
+    margin top: 20ox;
+}
+
+.hr {
+    width: 50%;
+    height: 100px;
+    margin:500px auto;
+}
+
+.buscar{
+    position:absolute;
+    padding: 50px;
+    bottom: 640px;
+    right: 500px;
+        
+}
+.buscar input{
+    width: 0px;
+    height: 40px;
+    font-size: 14px;
+    padding: 0 20px;
+    color: #A23234;
+    outline: none;
+    border: 1px solid #A23234;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+.btn
+{
+    position: absolute;
+    top: 50;
+    right;
+    background: #A23234;
+    width: 55;
+    height: 50;
+    height: 50;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px;
+    
+}
+.buscar:hover input{
+    width: 240px;
+}
+
+.buscar input:focus{
+    width: 240px;
+}
+
+
+.pie {
+    
+    background-color: #A23234;
+    line-height: 1.3;
+    text-align: center;
+    width: 100%;
+    color: #BDAA8C;
+    font-size: 15px;}
+.iconos {
+    font-size: 40px;
+}
+.capa{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    
+}
+.parrafo {
+    z-index: 1;
+    width: 600px;
+    width: 800px;
+    height: 600px;
+    padding: 20px 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    background: #F2EADD;
+    box-shadow: 10px 10px 25px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items:center;
+    margin-left: 150px;
+    
+}
+.parrafo img {
+    width: 300px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+    text-align: justify;
+}
+.fotos img {
+    width:  200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+.slider {
+    width: 800px;
+    height: 400px;
+    margin: 30px auto 50px;
+    overflow: hidden;
+    margin-left: 250px;
+    border-radius: 10px;
+    
+    
+    
+}
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 25s infinite alternate;
+}
+.slider li {
+    
+    list-style: none;
+    width: 100%;
+}
+.slider img{
+    width: 80%;
+    height: 80%;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+
+.recetas {
+    
+    width: 100%;
+    max-width: 800px;
+}
+.card{
+    
+    width: 350px;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #F2EADD;
+    box-shadow: 5px 5px 10px;
+    cursor: default;
+    transition: all 400ms ease;
+    float: left;
+    margin-bottom: 50px;
+}
+.card:hover {
+    box-shadow: 5px 5px 20px rgba (0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.card img{
+    
+    width: 250px;
+    height: 210px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 8px;
+}
+.card .contenido2{
+    
+    padding: 15px;
+    text-align: center;
+}
+.card contenido p{
+    
+    line-height: 1.5;
+    color: black;
+    
+}
+
+.card .contenido2 h3{
+    
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.card .contenido2 a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #524437;
+    border: 1px solid #524437;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    font-weight: 900;
+}
+.card .contenido2 a:hover{
+    background: #524437;
+    color: #fff;
+    
+}
+
+
+.recetas1 {
+    
+    width: 100%;
+    max-width: 800px;
+}
+.card1{
+    
+    width: 350px;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #F2EADD;
+    box-shadow: 5px 5px 10px;
+    cursor: default;
+    transition: all 400ms ease;
+    float: left;
+    margin-bottom: 50px;
+}
+.card1:hover {
+    box-shadow: 5px 5px 20px rgba (0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.card1 img{
+    
+    width: 250px;
+    height: 210px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 8px;
+}
+.card1 .contenido3{
+    
+    padding: 15px;
+    text-align: center;
+}
+.card1 contenido p{
+    
+    line-height: 1.5;
+    color: black;
+    
+}
+
+.card1 .contenido3 h3{
+    
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.card1 .contenido3 a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #524437;
+    border: 1px solid #524437;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    font-weight: 900;
+    
+}
+
+.card1 .contenido3 a:hover{
+    background: #524437;
+    color: #fff;
+    
+}
+
+
+
+
+
+
+
+.clientes {
+    
+    width: 100%;
+    max-width: 800px;
+}
+.card5{
+    
+    width: 350px;
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #F2EADD;
+    box-shadow: 5px 5px 10px;
+    cursor: default;
+    transition: all 400ms ease;
+    float: left;
+    margin-bottom: 50px;
+}
+.card5:hover {
+    box-shadow: 5px 5px 20px rgba (0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.card5 img{
+    
+    width: 80px;
+    height: 80px;
+    margin-left: 90px;
+    border-radius: 50%;
+}
+.card5 .contenido3{
+    
+    padding: 20px;
+    text-align: center;
+}
+.card5 contenido3 p{
+    
+    line-height: 1.5;
+    color: black;
+    font-size: 20px;
+    
+}
+
+.card5 .contenido3 h3{
+    
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.card5 .contenido3 a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 500px;
+    color: #524437;
+    border: 1px solid #524437;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    font-weight: 900;
+    
+}
+.card5 .contenido3 a:hover{
+    background: #524437;
+    color: #fff;
+    
+}
+
+.pie1 {
+    
+    background-color: #A23234;
+    line-height: 1.0;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    color: #BDAA8C;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    top: 700;
+}
+
+.iconos2 {
+    font-size: 35px;
+
+}
+.pie3 {
+    
+    background-color: #A23234;
+    line-height: 1.0;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    color: #BDAA8C;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    top: 2050px;
+}
+
+.iconos3 {
+    font-size: 35px;
+
+
+
+
+
+
+
+
+
+
